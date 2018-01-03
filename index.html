@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Twitter (Re-Corrección)</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+<!-- SECCION BARRA DE NAVEGACION -->
+    <nav id="barra_navegacion">
+      <ul class="menu_twitter">
+        <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i> Inicio</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li class="menu_idioma"><a href="#">Idioma: Español <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
+
+<!-- SECCION FICHA INTRODUCCION Y CAJA DE COMENTARIOS PARA TWITTEAR -->
+    <section class="presentacion_coder_y_tweetear">
+      <div class="presentacion">
+        <img src="assets/img/Screamapillar.jpg" class="avatar">
+        <h2>Reto de Código (Réplica -no muy linda de- Twitter)</h2>
+        <h3>Hola, mi nombre es Daniela
+        <br>
+        y aspiro a ser front-end developer Jr. :'(</h3>
+        <hr>
+        <h3><a href="#">Código</a></h3>
+      </div>
+
+      <div id="caja_comentarios">
+        <textarea id="comenta_aqui" rows="8" cols="50" onkeyup="conteoCaracteres()" placeholder="¿Qué te gustaría comentar?"></textarea>
+        <br>
+        <div class="boton_conteo">
+
+        </div>
+        <button type="button" id="button" onclick="addTweet()">Manda tu Tweet!</button>
+        <input id="maximo_caracteres" placeholder="140" disabled>
+      </div>
+    </section>
+
+<!-- SECCION DE COMENTARIOS POSTEADOS -->
+    <div id="tweets"></div>
+
+
+    <script type="text/javascript" src="assets/js/twitter-2.js"></script>
+    <script type="text/javascript" src="assets/js/moment.min.js"></script>
+  </body>
+</html>

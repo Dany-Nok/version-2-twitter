@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url("../img/sky_bg.jpg");
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ESTILOS BARRA DE MAVEGACION
+/*#barra_navegacion{
+  width: 100%;
+  /*position: sticky;
+  overflow: hidden;
+  background-color: white;
+  display: block;
+}*/
+
+.menu_twitter{
+  width: 100%;
+  position: sticky;
+  background-color: white;
+  list-style: none;
+  padding: 1%;
+}
+
+.menu_twitter li{
+  display: inline;
+  padding: 0 2%;
+}
+
+.menu_twitter li a{
+  text-decoration: none;
+}
+
+.menu_twitter li a:hover{
+  text-decoration: none;
+  border-bottom: 3px solid #2B9AE1;
+}
+
+.fa-twitter{
+  color: #2B9AE1;
+}
+
+/* ESTILOS FICHA INTRODUCCION Y CAJA DE COMENTARIOS PARA TWITTEAR*/
+.presentacion, #caja_comentarios{
+  background-color: #F6CEF5;
+  display: inline-block;
+}
+
+.avatar{
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  padding: 3% 0;
+}
+
+.presentacion{
+  padding: 0.5% 2%;
+  margin: 3% 5%;
+}
+
+.presentacion h2{
+  color: purple;
+  line-height: 2em;
+}
+
+.presentacion h3{
+  color: darkblue;
+  margin: 3% 0 3% 0;
+  line-height: 1.5em;
+}
+
+#caja_comentarios{
+  padding: 1%;
+}
+
+#comenta_aqui{
+  font-family: 'Roboto', sans-serif;
+  /*outline: 0 none;*/
+  resize: none;
+}
+
+#button{
+  padding: 3% 5%;
+  margin: 2% 0;
+  background-color: #2B9AE1;
+  color: white;
+  border-radius: 5%;
+  border-style: none;
+}
+
+#maximo_caracteres{
+  width: 10%;
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 10%;
+  margin-left: 54%;
+  padding: 0;
+  border-style: none;
+}
+
+/* ESTILO (DIV) COMENTARIOS QUE SE VAYAN AGREGANDO A TWITTER */
+#tweets div{
+  background-color: white;
+  opacity: 0.6;
+  padding: 2%;
+  margin: 2%;
+}
